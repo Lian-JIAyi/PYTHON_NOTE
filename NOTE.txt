@@ -56,11 +56,13 @@ def test_args(first, second, third,**kwargs):
 
 test_args("1st","2nd","3th",k = 5)
 ```
+```python=
 執行結果：
 First argument:  1st
 Second argument:  2nd
 Third argument:  3th
 Optional argument k (*kwargs): 5
+````
 ::: danger
 字典
 :::
