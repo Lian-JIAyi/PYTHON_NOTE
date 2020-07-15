@@ -13,7 +13,9 @@ DICT = {'sep' : '???', 'end' : '我是結尾'}
 print('hello', 'world', **DICT)
 ```
 sep：間隔符號，end：結尾符號
+```python=
 執行結果：hello???world 我是結尾
+```
 
 ---
 ### 第二種
@@ -27,21 +29,25 @@ fun(name='Bates', age=22, sex='男')
 ```python=
 produce.setdefault('KEY', 'VALUE') #可利用此方式新增字典
 ```
+```python=
 執行結果：{'name' : 'Bates', 'age' : 22, 'sex' : '男'}
+```
 
 ---
-## *args、**kwargs
-### *args 固定的位置参數
+## \*args、\*\*kwargs
+### \*args 固定的位置参數
 無數個參數
 ```python=
 def function_1(*args):
     print(args)
 function_1("A", "B", "C", "D", "E", "我", "是", "工", "程", "師")
 ```
+```python=
 執行結果：('A', 'B', 'C', 'D', 'E', '我', '是', '工', '程', '師')
+```
 
 ---
-### **kwargs 固定的關鍵字参數
+### \*\*kwargs 固定的關鍵字参數
 
 ::: danger
 傳入參數中含有 ? = ?(k1 = "我")
@@ -79,10 +85,12 @@ kwargs = {
     }
 test_args(**kwargs)
 ```
+```python=
 執行結果：
 name argument:  apple
 age argument:  banana
 sex argument:  man
+```
 
 ---
 # partial
@@ -143,7 +151,9 @@ x*x(想要再FOR迴圈執行的程式碼) for x in range(3)(FOR迴圈)
 :::info
 for x in range(3)是不用冒號的
 :::
+```python=
 執行結果：for_list = [0, 1, 4] 
+```
 由於是用清單方式包住，所以將生成清單狀態
 # FOR 簡寫2
 ```python=
